@@ -1,0 +1,48 @@
+site_name: Documentação de Erros e Processos JCG
+site_url: https://idea-technology-it.github.io/documentacao-jcg/
+site_description: Documentação de Erros e Processos JCG
+site_author: 'Pedro Lucas Rodrigues'
+
+# Copyright
+copyright: Copyright &copy; 2024 - 2024 Idea Technology
+
+# Configuration
+theme:
+  language: pt-BR
+  name: material
+  logo: img/logo/JC-Logo.png
+  features:
+    - content.code.copy
+    - navigation.indexes
+    - navigation.tabs
+    - navigation.tracking
+    - navigation.footer
+    - content.tooltips
+  palette:
+    - scheme: slate
+      primary: 'black'
+      accent: 'orange'
+
+
+# Navigation
+nav:
+  - Introdução: home/index.md
+  - Morar Bem:
+      - Chamados Recorrentes:
+          - Criar Usuários: morar-bem/chamados/criar-usuario.md
+          - Inclusão de Boletos de Taxa de Cartório: morar-bem/chamados/inclusao-boletos-tx-cartorio.md
+      - Procedimentos:
+          - Checklists de Solução: morar-bem/solucoes/checklists.md
+          - Contato de Suporte: morar-bem/solucoes/contato-suporte.md
+      - Sumário de Tabelas:
+          - Sumário: morar-bem/documentacao-tabelas/documentacao.md
+
+# Plugins
+plugins:
+  - search
+
+# Extra CSS
+extra_css:
+  - stylesheets/all.css
+
+
