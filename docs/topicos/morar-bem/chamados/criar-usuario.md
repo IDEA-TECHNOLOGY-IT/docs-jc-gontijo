@@ -47,9 +47,12 @@ Este guia passo a passo irá demonstrar como criar um novo usuário no sistema *
 ## **Passo 4: Verificar o Novo Usuário**
 1. Acesse o Banco de Dados no Servidor com IP: 10.10.10.84,
 2. Utilizando o Owner JCGCOM ou JCGWEB, execute a Query a seguir:
-```SELECT U.*, U.ROWID FROM JCGWEB.JCG_USUARIO U WHERE U.USU_TX_NOME LIKE 'Exemplo'```
-3. Exemplo será o Nome de usuário que você inseriu.
-4. Após executar a Query acima, você obterá esse resultado: 
+---
+     SELECT U.*, U.ROWID FROM JCGWEB.JCG_USUARIO U 
+     WHERE U.USU_TX_NOME LIKE 'Exemplo'
+---
+4. Exemplo será o Nome de usuário que você inseriu.
+5. Após executar a Query acima, você obterá esse resultado: 
 
 <p><div align="center">
   <img src="../../assets/criar-usuario/4.png" alt="Resulatdo Query acima">
@@ -57,8 +60,8 @@ Este guia passo a passo irá demonstrar como criar um novo usuário no sistema *
 </div></p>
 
 5. Clique no cadeado destacado na imagem e altere as 2 colunas demarcadas para o seguinte:
-   - USU_TX_SENHA: ```'á
-Ü9IºY«¾VàWòˆ>'```
+   - USU_TX_SENHA: ```á
+Ü9IºY«¾VàWòˆ>```
    - USU_CH_AUT_WINDOWS: ```N```.
 
 6. Após alterar, clique no ícone de "Check" destacado na imagem abaixo.

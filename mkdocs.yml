@@ -10,7 +10,8 @@ copyright: Copyright &copy; 2024 - 2024 Idea Technology
 theme:
   language: pt-BR
   name: material
-  logo: img/logo/JC-Logo.png
+  logo: assets/logo/JC-Logo.png
+  favicon: assets/logo/favicon.ico
   features:
     - content.code.copy
     - navigation.indexes
@@ -29,13 +30,17 @@ nav:
   - Introdução: home/index.md
   - Morar Bem:
       - Chamados Recorrentes:
-          - Criar Usuários: morar-bem/chamados/criar-usuario.md
-          - Inclusão de Boletos de Taxa de Cartório: morar-bem/chamados/inclusao-boletos-tx-cartorio.md
-      - Procedimentos:
-          - Checklists de Solução: morar-bem/solucoes/checklists.md
-          - Contato de Suporte: morar-bem/solucoes/contato-suporte.md
-      - Sumário de Tabelas:
-          - Sumário: morar-bem/documentacao-tabelas/documentacao.md
+          - Atualizar Data de Entrega de Chaves: topicos/morar-bem/chamados/atualizar-data-entrega-chaves.md
+          - Criar Usuários: topicos/morar-bem/chamados/criar-usuario.md
+          - Gravar Histórico/Nota : topicos/morar-bem/chamados/gravar-historico.md
+          - Inclusão de Boletos de Taxa de Cartório: topicos/morar-bem/chamados/inclusao-boletos-tx-cartorio.md
+      - Processos:
+          - Mailing: topicos/morar-bem/processos/mailing.md
+      - Tabelas:
+          - Tabelas: topicos/morar-bem/tabelas/tabelas.md
+  - Web Services:
+      - Gerador de Relatórios: topicos/web-services/gerador-relatorios.md
+      - Observer: topicos/web-services/observer.md
 
 # Plugins
 plugins:
