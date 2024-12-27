@@ -12,13 +12,13 @@
         <meta name="author" content="Pedro Lucas Rodrigues">
       
       
-        <link rel="canonical" href="https://idea-technology-it.github.io/documentacao-jcg/topicos/morar-bem/tabelas/tabelas/">
+        <link rel="canonical" href="https://idea-technology-it.github.io/documentacao-jcg/topicos/morar-bem/processos/deploy/">
       
       
-        <link rel="prev" href="../../processos/mailing/">
+        <link rel="prev" href="../../chamados/inclusao-boletos-tx-cartorio/">
       
       
-        <link rel="next" href="../../../web-services/gerador-relatorios/">
+        <link rel="next" href="../mailing/">
       
       
       <link rel="icon" href="../../../../assets/logo/favicon.ico">
@@ -26,7 +26,7 @@
     
     
       
-        <title>Tabelas - Documentação de Erros e Processos JCG</title>
+        <title>Deploy - Documentação de Erros e Processos JCG</title>
       
     
     
@@ -80,7 +80,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#tabelas" class="md-skip">
+        <a href="#deploy" class="md-skip">
           Pular para conteúdo
         </a>
       
@@ -113,7 +113,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              Tabelas
+              Deploy
             
           </span>
         </div>
@@ -575,8 +575,10 @@
                 
   
   
+    
   
   
+  
     
     
       
@@ -590,11 +592,11 @@
       
     
     
-    <li class="md-nav__item md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
       
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2_2" >
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2_2" checked>
         
           
           <label class="md-nav__link" for="__nav_2_2" id="__nav_2_2_label" tabindex="0">
@@ -608,7 +610,7 @@
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_2_2_label" aria-expanded="false">
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_2_2_label" aria-expanded="true">
           <label class="md-nav__title" for="__nav_2_2">
             <span class="md-nav__icon md-icon"></span>
             Processos
@@ -619,10 +621,30 @@
                 
   
   
+    
   
   
-    <li class="md-nav__item">
-      <a href="../../processos/deploy/" class="md-nav__link">
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  <span class="md-ellipsis">
+    Deploy
+  </span>
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
         
   
   <span class="md-ellipsis">
@@ -631,6 +653,44 @@
   
 
       </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Índice">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Índice
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#1o-passo-backup-versao-atual" class="md-nav__link">
+    <span class="md-ellipsis">
+      1º Passo: Backup Versão Atual
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#2o-passo-deployar-nova-versao" class="md-nav__link">
+    <span class="md-ellipsis">
+      2º Passo: Deployar nova Versão
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
     </li>
   
 
@@ -643,7 +703,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../processos/mailing/" class="md-nav__link">
+      <a href="../mailing/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -669,8 +729,6 @@
                 
   
   
-    
-  
   
   
     
@@ -684,11 +742,11 @@
       
     
     
-    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--nested">
       
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2_3" checked>
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2_3" >
         
           
           <label class="md-nav__link" for="__nav_2_3" id="__nav_2_3_label" tabindex="0">
@@ -702,7 +760,7 @@
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_2_3_label" aria-expanded="true">
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_2_3_label" aria-expanded="false">
           <label class="md-nav__title" for="__nav_2_3">
             <span class="md-nav__icon md-icon"></span>
             Tabelas
@@ -713,19 +771,10 @@
                 
   
   
-    
   
   
-  
-    <li class="md-nav__item md-nav__item--active">
-      
-      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
-      
-      
-        
-      
-      
-      <a href="./" class="md-nav__link md-nav__link--active">
+    <li class="md-nav__item">
+      <a href="../../tabelas/tabelas/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -734,7 +783,6 @@
   
 
       </a>
-      
     </li>
   
 
@@ -868,6 +916,32 @@
     
   
   
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Índice
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#1o-passo-backup-versao-atual" class="md-nav__link">
+    <span class="md-ellipsis">
+      1º Passo: Backup Versão Atual
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#2o-passo-deployar-nova-versao" class="md-nav__link">
+    <span class="md-ellipsis">
+      2º Passo: Deployar nova Versão
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
 </nav>
                   </div>
                 </div>
@@ -881,55 +955,23 @@
                   
 
 
-<h1 id="tabelas">Tabelas</h1>
-<table>
-<thead>
-<tr>
-<th>Nome da Tabela</th>
-<th>Chave Primária</th>
-<th>Chave Estrangeira</th>
-<th>Descrição</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>COM_MB_INTERESSADO</td>
-<td>MBCL_NR_CODIGO</td>
-<td>Não</td>
-<td>Tabela de Interessados/Candidatos</td>
-</tr>
-<tr>
-<td>COM_MB_PROPOSTA</td>
-<td>MBPO_NR_CODIGO</td>
-<td>Sim -&gt; COM_MB_INTERESSADO</td>
-<td>Tabela de Propostas</td>
-</tr>
-<tr>
-<td>COM_MB_PROPOSTA_PROSOLUTO</td>
-<td>MBPS_NR_CODIGO</td>
-<td>Sim -&gt; COM_MB_PROPOSTA</td>
-<td>Tabela de Parcelas/Boletos</td>
-</tr>
-<tr>
-<td>COM_MB_PROPOSTA_CONTRATO</td>
-<td>MBPO_NR_CODIGO</td>
-<td>Sim -&gt; COM_MB_PROPOSTA</td>
-<td>Tabela de Contrato</td>
-</tr>
-<tr>
-<td>COM_MB_TIPO_ANDAMENTO</td>
-<td>MBAN_NR_CODIGO</td>
-<td>Não</td>
-<td>Tabela de Situações</td>
-</tr>
-<tr>
-<td>COM_MB_PROVIDENCIA</td>
-<td>MBPR_NR_CODIGO</td>
-<td>Sim -&gt; COM_MB_INTERESSADO</td>
-<td>Tabela de Histórico de Cliente</td>
-</tr>
-</tbody>
-</table>
+<h1 id="deploy"><strong>Deploy</strong></h1>
+<p>Este guia passo a passo irá demonstrar como fazer o Deploy de uma nova versão do sistema <strong>MORAR BEM</strong>.</p>
+<hr />
+<h2 id="1o-passo-backup-versao-atual"><strong>1º Passo: Backup Versão Atual</strong></h2>
+<ol>
+<li>Entre no servidor <code>10.1.1.104</code>.</li>
+<li>Crie uma pasta com o nome <code>MorarBem_bkp_data_de_hoje</code> no diretório <code>C:\WEB\JCG\_backup</code>.</li>
+<li>Vá para o diretório: <code>C:\WEB\JCG\MorarBem\Bin</code>.</li>
+<li>Copie o arquivo <code>JCGAppMorarBem.dll</code> e cole na pasta que você criou na etapa 2.</li>
+</ol>
+<hr />
+<h2 id="2o-passo-deployar-nova-versao"><strong>2º Passo: Deployar nova Versão</strong></h2>
+<ol>
+<li>Copie o novo arquivo <code>JCGAppMorarBem.dll</code> que foi gerado após compilar as mudanças no código e cole no diretório  <code>C:\WEB\JCG\MorarBem\Bin</code> com o nome <code>JCGAppMorarBem.dll</code>.</li>
+<li>Testar se o Deploy funcionou acessando o Morar Bem.</li>
+</ol>
+<hr />
 
 
 
@@ -959,7 +1001,7 @@
       <nav class="md-footer__inner md-grid" aria-label="Rodapé" >
         
           
-          <a href="../../processos/mailing/" class="md-footer__link md-footer__link--prev" aria-label="Anterior: Mailing">
+          <a href="../../chamados/inclusao-boletos-tx-cartorio/" class="md-footer__link md-footer__link--prev" aria-label="Anterior: Inclusão de Boletos de Taxa de Cartório">
             <div class="md-footer__button md-icon">
               
               <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12Z"/></svg>
@@ -969,20 +1011,20 @@
                 Anterior
               </span>
               <div class="md-ellipsis">
-                Mailing
+                Inclusão de Boletos de Taxa de Cartório
               </div>
             </div>
           </a>
         
         
           
-          <a href="../../../web-services/gerador-relatorios/" class="md-footer__link md-footer__link--next" aria-label="Próximo: Gerador de Relatórios">
+          <a href="../mailing/" class="md-footer__link md-footer__link--next" aria-label="Próximo: Mailing">
             <div class="md-footer__title">
               <span class="md-footer__direction">
                 Próximo
               </span>
               <div class="md-ellipsis">
-                Gerador de Relatórios
+                Mailing
               </div>
             </div>
             <div class="md-footer__button md-icon">
