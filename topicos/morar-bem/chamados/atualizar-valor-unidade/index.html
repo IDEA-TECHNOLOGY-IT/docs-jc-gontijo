@@ -18,7 +18,7 @@
         <link rel="prev" href="../atualizar-valor-taxa-cartorio/">
       
       
-        <link rel="next" href="../cadastrar-cenop/">
+        <link rel="next" href="../criar-usuario/">
       
       <link rel="icon" href="../../../../assets/logo/favicon.ico">
       <meta name="generator" content="mkdocs-1.5.2, mkdocs-material-9.1.19">
@@ -77,6 +77,11 @@
     <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
     <label class="md-overlay" for="__drawer"></label>
     <div data-md-component="skip">
+      
+        
+        <a href="#atualizar-valor-da-unidade" class="md-skip">
+          Pular para conteúdo
+        </a>
       
     </div>
     <div data-md-component="announce">
@@ -342,8 +347,6 @@
         
           
         
-          
-        
       
       
         <label class="md-nav__link" for="__nav_2_1" id="__nav_2_1_label" tabindex="0">
@@ -398,25 +401,44 @@
       <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
       
       
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          Atualizar Valor Unidade
+          <span class="md-nav__icon md-icon"></span>
+        </label>
       
       <a href="./" class="md-nav__link md-nav__link--active">
         Atualizar Valor Unidade
       </a>
       
-    </li>
-  
+        
 
-            
-          
-            
-              
+<nav class="md-nav md-nav--secondary" aria-label="Índice">
   
   
   
-    <li class="md-nav__item">
-      <a href="../cadastrar-cenop/" class="md-nav__link">
-        Cadastrar CENOP
-      </a>
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Índice
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#execute-a-query-abaixo-com-owner-jcgcom" class="md-nav__link">
+    Execute a Query abaixo com owner JCGCOM
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
     </li>
   
 
@@ -683,6 +705,23 @@
   
   
   
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Índice
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#execute-a-query-abaixo-com-owner-jcgcom" class="md-nav__link">
+    Execute a Query abaixo com owner JCGCOM
+  </a>
+  
+</li>
+      
+    </ul>
   
 </nav>
                   </div>
@@ -697,9 +736,29 @@
                   
 
 
-  <h1>Atualizar Valor Unidade</h1>
-
-
+<h1 id="atualizar-valor-da-unidade"><strong>Atualizar Valor da Unidade</strong></h1>
+<p>Este guia passo a passo irá demonstrar como Atualizar o Valor das Unidades no sistema do <strong>MORAR BEM</strong>.</p>
+<hr />
+<h2 id="execute-a-query-abaixo-com-owner-jcgcom"><strong>Execute a Query abaixo com owner JCGCOM</strong></h2>
+<hr />
+<pre><code>UPDATE COM_MB_UNIDADE_VALOR
+SET MBUV_NR_VALOR = 'NOVO VALOR'
+WHERE UND_IN_CODIGO IN (
+        SELECT V.UND_IN_CODIGO
+        FROM COM_MB_UNIDADE_MATRICULA M,
+            JCGWEB.VW_MG_UNIDADE_COMPLETA U,
+            COM_MB_UNIDADE_VALOR V,
+            COM_MB_PROPOSTA P
+        WHERE M.UND_NR_CODIGO = U.codigoUnidade
+            AND U.codigoUnidade = V.UND_IN_CODIGO
+            AND U.CODIGOFILIAL = 39559
+            AND U.ETAPA LIKE '%CONDOMÍNIO PARA ALTERAR%'
+            AND v.UND_IN_CODIGO NOT IN (
+            SELECT PROP.UND_IN_CODIGO FROM COM_MB_PROPOSTA PROP
+        )
+    )
+</code></pre>
+<hr />
 
 
 
@@ -737,13 +796,13 @@
         
         
           
-          <a href="../cadastrar-cenop/" class="md-footer__link md-footer__link--next" aria-label="Próximo: Cadastrar CENOP" rel="next">
+          <a href="../criar-usuario/" class="md-footer__link md-footer__link--next" aria-label="Próximo: Criar Usuários" rel="next">
             <div class="md-footer__title">
               <span class="md-footer__direction">
                 Próximo
               </span>
               <div class="md-ellipsis">
-                Cadastrar CENOP
+                Criar Usuários
               </div>
             </div>
             <div class="md-footer__button md-icon">
