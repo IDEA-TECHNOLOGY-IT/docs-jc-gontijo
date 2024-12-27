@@ -25,7 +25,7 @@ Após reiniciar o IIS, o script continua o ciclo de monitoramento, verificando n
 
 <p>
     <div align="center">
-        <img src="../../assets/diagramas/observer.png" alt="Diagrama Observer">
+        <img src="/docs/assets/diagramas/observer.png" alt="Diagrama Observer">
         <h6>Diagrama Observer.</h6>
     </div>
 </p>

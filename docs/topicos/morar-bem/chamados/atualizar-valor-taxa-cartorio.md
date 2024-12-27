@@ -20,14 +20,14 @@ A atualização é feita em 3 etapas, são elas:
 
 <p>
     <div align="center">
-        <img src="../../assets/atualizar-valor-taxa-cartorio/1.png" alt="Termo Ciência">
+        <img src="/docs/assets/atualizar-valor-taxa-cartorio/1.png" alt="Termo Ciência">
         <h6>Imagem 1: Termo Ciência.</h6>
     </div>
 </p>
 
 <p>
     <div align="center">
-        <img src="../../assets/atualizar-valor-taxa-cartorio/2.png" alt="Agendamento COBAN">
+        <img src="/docs/assets/atualizar-valor-taxa-cartorio/2.png" alt="Agendamento COBAN">
         <h6>Imagem 2:Agendamento COBAN.</h6>
     </div>
 </p>
@@ -65,3 +65,4 @@ A atualização é feita em 3 etapas, são elas:
 - Atualize o 3º parâmetro, no exemplo acima representado por 1764.50, para o novo valor da taxa de cartório.
 - Faça o **[Deploy](processos/deploy.md)** e faça a validação pelo Morar Bem.
 
+---

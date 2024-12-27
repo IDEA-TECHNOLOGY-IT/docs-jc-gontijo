@@ -15,5 +15,7 @@ Este guia passo a passo irá demonstrar como Incluir Boletos de Taxa de Catório
                  AND U.ETAPA LIKE '%CONDOMÍNIO 08%'
 
 ## **Passo 2: Executar a Query abaixo para Inserir o condomínio**
-     INSERT INTO TEMP_MB_CONDOMINIO_CONTAS cc (condominio, codigo_empreendimento, banco_boleto, est_in_codigo)     - 
-     VALUES (CONDOMÍNIO 08, 39559, 'CEF', AQUI INSERIR O CÓDIGO OBTIDO DA CONSULTA ACIMA).    - 
+     INSERT INTO TEMP_MB_CONDOMINIO_CONTAS cc (condominio, codigo_empreendimento, banco_boleto, est_in_codigo)
+     VALUES (CONDOMÍNIO 08, 39559, 'CEF', AQUI INSERIR O CÓDIGO OBTIDO DA CONSULTA ACIMA).
+
+---
