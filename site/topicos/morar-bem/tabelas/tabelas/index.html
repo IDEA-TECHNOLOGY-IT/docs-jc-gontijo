@@ -385,6 +385,10 @@
       
         
       
+        
+      
+        
+      
     
     
       
@@ -486,11 +490,53 @@
   
   
     <li class="md-nav__item">
-      <a href="../../chamados/cadastrar-cenop/" class="md-nav__link">
+      <a href="../../chamados/cadastrar-apf/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
-    Cadastrar CENOP
+    Cadastrar APF
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../chamados/cadastrar-cep/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Cadastrar CEP
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../chamados/cadastrar-matricula-iptu/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Cadastrar Matrícula / IPTU de Unidade
   </span>
   
 
@@ -532,7 +578,7 @@
         
   
   <span class="md-ellipsis">
-    Gravar Histórico/Nota
+    Gravar Histórico / Nota
   </span>
   
 
@@ -881,55 +927,47 @@
                   
 
 
-<h1 id="tabelas">Tabelas</h1>
+<h1 id="tabelas"><strong>Tabelas</strong></h1>
 <table>
 <thead>
 <tr>
-<th>Nome da Tabela</th>
-<th>Chave Primária</th>
-<th>Chave Estrangeira</th>
+<th>Tabela</th>
 <th>Descrição</th>
 </tr>
 </thead>
 <tbody>
 <tr>
 <td>COM_MB_INTERESSADO</td>
-<td>MBCL_NR_CODIGO</td>
-<td>Não</td>
 <td>Tabela de Interessados/Candidatos</td>
 </tr>
 <tr>
 <td>COM_MB_PROPOSTA</td>
-<td>MBPO_NR_CODIGO</td>
-<td>Sim -&gt; COM_MB_INTERESSADO</td>
 <td>Tabela de Propostas</td>
 </tr>
 <tr>
 <td>COM_MB_PROPOSTA_PROSOLUTO</td>
-<td>MBPS_NR_CODIGO</td>
-<td>Sim -&gt; COM_MB_PROPOSTA</td>
 <td>Tabela de Parcelas/Boletos</td>
 </tr>
 <tr>
 <td>COM_MB_PROPOSTA_CONTRATO</td>
-<td>MBPO_NR_CODIGO</td>
-<td>Sim -&gt; COM_MB_PROPOSTA</td>
 <td>Tabela de Contrato</td>
 </tr>
 <tr>
 <td>COM_MB_TIPO_ANDAMENTO</td>
-<td>MBAN_NR_CODIGO</td>
-<td>Não</td>
 <td>Tabela de Situações</td>
 </tr>
 <tr>
 <td>COM_MB_PROVIDENCIA</td>
-<td>MBPR_NR_CODIGO</td>
-<td>Sim -&gt; COM_MB_INTERESSADO</td>
 <td>Tabela de Histórico de Cliente</td>
 </tr>
 </tbody>
 </table>
+<p>
+    <div align="center">
+        <img src="/docs/assets/diagramas/ER.png" alt="Diagrama ER">
+        <h6>Imagem 1: Diagrama ER.</h6>
+    </div>
+</p>
 
 
 

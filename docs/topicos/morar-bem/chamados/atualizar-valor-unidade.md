@@ -19,7 +19,7 @@ Este guia passo a passo irá demonstrar como Atualizar o Valor das Unidades no s
             WHERE M.UND_NR_CODIGO = U.codigoUnidade
                 AND U.codigoUnidade = V.UND_IN_CODIGO
                 AND U.CODIGOFILIAL = 39559
-                AND U.ETAPA LIKE '%CONDOMÍNIO PARA ALTERAR%'
+                AND U.ETAPA LIKE '%CONDOMÍNIO X%'
                 AND v.UND_IN_CODIGO NOT IN (
                 SELECT PROP.UND_IN_CODIGO FROM COM_MB_PROPOSTA PROP
             )
