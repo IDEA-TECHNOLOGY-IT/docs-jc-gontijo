@@ -14,5 +14,5 @@ Esta documentação foi criada especialmente para a **JC Gontijo** com o objetiv
 3. **Explore os links relacionados:** Muitos tópicos incluem referências a procedimentos complementares ou informações adicionais.
 
 ## **Estrutura da Documentação**
-- **[Chamados Recorrentes](chamados-recorrentes/):** Identifique as causas e encontre soluções para os problemas mais frequentes enfrentados nos sistemas.
+- **[Chamados Recorrentes](chamados/):** Identifique as causas e encontre soluções para os problemas mais frequentes enfrentados nos sistemas.
 - **[Processos Comuns](processos/):** Diretrizes para escalonamento e gestão de chamados.
