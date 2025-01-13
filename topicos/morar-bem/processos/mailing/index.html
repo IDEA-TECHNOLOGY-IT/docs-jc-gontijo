@@ -95,7 +95,7 @@
   <nav class="md-header__inner md-grid" aria-label="Cabeçalho">
     <a href="../../../.." title="Documentação de Erros e Processos JCG" class="md-header__button md-logo" aria-label="Documentação de Erros e Processos JCG" data-md-component="logo">
       
-  <img src="../../../../assets/logo/JC-Logo.png" alt="logo">
+  <img src="../../../../assets/logo/JC-Logo.jpg" alt="logo">
 
     </a>
     <label class="md-header__button md-icon" for="__drawer">
@@ -256,7 +256,7 @@
   <label class="md-nav__title" for="__drawer">
     <a href="../../../.." title="Documentação de Erros e Processos JCG" class="md-nav__button md-logo" aria-label="Documentação de Erros e Processos JCG" data-md-component="logo">
       
-  <img src="../../../../assets/logo/JC-Logo.png" alt="logo">
+  <img src="../../../../assets/logo/JC-Logo.jpg" alt="logo">
 
     </a>
     Documentação de Erros e Processos JCG
@@ -854,24 +854,22 @@
 <hr />
 <h2 id="passo-4-enviar-mailing-para-email"><strong>Passo 4: Enviar Mailing para Email</strong></h2>
 <ol>
-<li>
-<p>Feito todos os passos corretamente, exporte as colunas de <strong>NOME, CPF, EMAIL, TELEFONE, DATA NASCIMENTO</strong> da tabela <strong>"COM_MB_INTERESSADO"</strong> para Excel e envie-a para os seguintes emails:</p>
-<ul>
-<li>marilia.venceslau@jcgontijo.com.br</li>
-<li>pedro@ideatechnology.com.br</li>
-</ul>
-</li>
-<li>
-<p>Copie para:</p>
-<ul>
-<li>carla.vale@jcgontijo.com.br</li>
-<li>edlene.damascena@jcgontijo.com.br</li>
-<li>vanda.gois@jcgontijo.com.br</li>
-<li>queila.miranda@jcgontijo.com.br</li>
-<li>maycon@ideatechnology.com.br</li>
-</ul>
-</li>
+<li>Feito todos os passos corretamente, exporte a Query abaixo para Excel e envie-a para o solicitante e para <code>pedro@ideatechnology.com.br</code> e <code>`maycon@ideatechnology.com.br</code></li>
 </ol>
+<hr />
+<pre><code> SELECT 
+ I.MBCL_NR_CODIGO      AS CODIGO_INTERESSADO,
+ I.MBCL_TX_NOME         AS NOME, 
+ I.MBCL_TX_CHAVE        AS CPF,
+ I.MBCL_TX_TELEFONE1    AS TELEFONE1,
+ I.MBCL_TX_TELEFONE2    AS TELEFONE2,
+ I.MBCL_TX_TELEFONE3    AS TELEFONE3,
+ I.MBCL_TX_EMAIL        AS EMAIL,
+ I.MBCL_CH_SERASA       AS SERASA
+
+ FROM COM_MB_INTERESSADO I
+     WHERE I.MBCL_NR_LOTE = LOTE
+</code></pre>
 <hr />
 
 
