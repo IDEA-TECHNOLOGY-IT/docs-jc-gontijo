@@ -10,7 +10,7 @@ copyright: Copyright &copy; 2024 - 2024 Idea Technology
 theme:
   language: pt-BR
   name: material
-  logo: assets/logo/JC-Logo.png
+  logo: assets/logo/JC-Logo.jpg
   favicon: assets/logo/favicon.ico
   features:
     - content.code.copy

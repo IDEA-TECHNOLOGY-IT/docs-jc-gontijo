@@ -20,14 +20,14 @@ A atualização é feita em 3 etapas, são elas:
 
 <p>
     <div align="center">
-        <img src="/docs/assets/atualizar-valor-taxa-cartorio/1.png" alt="Termo Ciência">
+        <img src="/docs/assets/atualizar-valor-taxa-cartorio/1.jpg" alt="Termo Ciência">
         <h6>Imagem 1: Termo Ciência.</h6>
     </div>
 </p>
 
 <p>
     <div align="center">
-        <img src="/docs/assets/atualizar-valor-taxa-cartorio/2.png" alt="Agendamento COBAN">
+        <img src="/docs/assets/atualizar-valor-taxa-cartorio/2.jpg" alt="Agendamento COBAN">
         <h6>Imagem 2:Agendamento COBAN.</h6>
     </div>
 </p>

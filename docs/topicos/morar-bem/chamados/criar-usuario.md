@@ -10,7 +10,7 @@ Este guia passo a passo irá demonstrar como criar um novo usuário no sistema *
 3. Acesse a opção **"Usuário (JCG)"** 
 
 <p><div align="center">
-  <img src="/docs/assets/criar-usuario/1.png" alt="Menu de Usuários">
+  <img src="/docs/assets/criar-usuario/1.jpg" alt="Menu de Usuários">
   <h6>Imagem 1: Menu de Usuários</h6>
 </div></p>
 
@@ -22,7 +22,7 @@ Este guia passo a passo irá demonstrar como criar um novo usuário no sistema *
 
 <p>
   <div align="center">
-    <img src="/docs/assets/criar-usuario/2.png" alt="Botão Incluir Usuário">
+    <img src="/docs/assets/criar-usuario/2.jpg" alt="Botão Incluir Usuário">
     <h6>Imagem 2: Botão Incluir Usuário</h6>
   </div>
 </p>
@@ -38,7 +38,7 @@ Este guia passo a passo irá demonstrar como criar um novo usuário no sistema *
    - **Senha**:  A senha utilizamos nossa senha padrão (123456), que será demonstrado como inseri-la nos próximos passos.
 
 <p><div align="center">
-  <img src="/docs/assets/criar-usuario/3.png" alt="Formulário Cadastro de Usuário">
+  <img src="/docs/assets/criar-usuario/3.jpg" alt="Formulário Cadastro de Usuário">
   <h6>Imagem 3: Formulário Cadastro de Usuário.</h6>
 </div></p>
 
@@ -55,7 +55,7 @@ Este guia passo a passo irá demonstrar como criar um novo usuário no sistema *
 5. Após executar a Query acima, você obterá esse resultado: 
 
 <p><div align="center">
-  <img src="/docs/assets/criar-usuario/4.png" alt="Resulatdo Query acima">
+  <img src="/docs/assets/criar-usuario/4.jpg" alt="Resulatdo Query acima">
   <h6>Imagem 4: Resulatdo Query acima.</h6>
 </div></p>
 
@@ -66,12 +66,12 @@ Este guia passo a passo irá demonstrar como criar um novo usuário no sistema *
 
 6. Após alterar, clique no ícone de "Check" destacado na imagem abaixo.
    <p><div align="center">
-  <img src="/docs/assets/criar-usuario/5.png" alt="Postar Mudanças">
+  <img src="/docs/assets/criar-usuario/5.jpg" alt="Postar Mudanças">
   <h6>Imagem 5: Postar Mudanças.</h6>
 </div></p>
 
 7. Agora, só commitar as mudançar no banco de dados.
    <p><div align="center">
-  <img src="/docs/assets/criar-usuario/6.png" alt="Commit">
+  <img src="/docs/assets/criar-usuario/6.jpg" alt="Commit">
   <h6>Imagem 6: Commit.</h6>
 </div></p>

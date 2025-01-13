@@ -28,15 +28,21 @@ O processo de Mailing consiste em captar novos clientes a partir de uma planilha
 ---
 
 ## **Passo 4: Enviar Mailing para Email**
-1. Feito todos os passos corretamente, exporte as colunas de **NOME, CPF, EMAIL, TELEFONE, DATA NASCIMENTO** da tabela **"COM_MB_INTERESSADO"** para Excel e envie-a para os seguintes emails:
-    - marilia.venceslau@jcgontijo.com.br
-    - pedro@ideatechnology.com.br
+1. Feito todos os passos corretamente, exporte a Query abaixo para Excel e envie-a para o solicitante e para ```pedro@ideatechnology.com.br``` e ```maycon@ideatechnology.com.br``
 
-2. Copie para:
-    - carla.vale@jcgontijo.com.br
-    - edlene.damascena@jcgontijo.com.br
-    - vanda.gois@jcgontijo.com.br
-    - queila.miranda@jcgontijo.com.br
-    - maycon@ideatechnology.com.br
+---
+
+     SELECT 
+     I.MBCL_NR_CODIGO      AS CODIGO_INTERESSADO,
+     I.MBCL_TX_NOME         AS NOME, 
+     I.MBCL_TX_CHAVE        AS CPF,
+     I.MBCL_TX_TELEFONE1    AS TELEFONE1,
+     I.MBCL_TX_TELEFONE2    AS TELEFONE2,
+     I.MBCL_TX_TELEFONE3    AS TELEFONE3,
+     I.MBCL_TX_EMAIL        AS EMAIL,
+     I.MBCL_CH_SERASA       AS SERASA
+
+     FROM COM_MB_INTERESSADO I
+         WHERE I.MBCL_NR_LOTE = LOTE
 
 ---
