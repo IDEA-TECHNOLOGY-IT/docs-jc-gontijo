@@ -19,6 +19,7 @@ Este guia passo a passo irá demonstrar como Cadastrar CEP de um condomínio no 
             AND ETP.EST_CH_TIPOESTRUTURA = 'T'
             AND ETP.EST_IN_CODIGO = P.ETP_IN_CODIGO
             AND ETP.EST_IN_CODIGO = 'NUM COND'
+            AND ETP.FIL_IN_CODIGO = 39559
 
 ---
 
