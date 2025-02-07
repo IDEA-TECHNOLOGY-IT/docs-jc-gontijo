@@ -33,7 +33,7 @@ jobs:
           chmod 600 ~/.ssh/id_rsa
           ssh-keyscan -H ${{ secrets.SERVER_IP }} >> ~/.ssh/known_hosts
         env:
-          SERVER_IP: 10.10.10.84
+          SERVER_IP: 10.1.1.104
 
       - name: Deploy to Internal Server via SCP
         run: |
