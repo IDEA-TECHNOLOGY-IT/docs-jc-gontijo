@@ -1,4 +1,4 @@
-name: Deploy MkDocs to GitHub Pages
+name: Deploy MkDocs to Internal Infra
 
 on:
   push:
@@ -7,7 +7,7 @@ on:
 
 jobs:
   deploy:
-    runs-on: ubuntu-latest
+    runs-on: self-hosted  # Runner que tem acesso à VPN
 
     steps:
       - name: Checkout the repository
@@ -26,8 +26,29 @@ jobs:
         run: |
           mkdocs build
 
-      - name: Deploy to GitHub Pages
-        uses: peaceiris/actions-gh-pages@v4
-        with:
-          github_token: ${{ secrets.GITHUB_TOKEN }}
-          publish_dir: ./site
+      - name: Connect to VPN (openfortivpn)
+        run: |
+          sudo openfortivpn homeoffice.bsb.brbpo.com.br -u ${{ secrets.VPN_USER }} --trusted-cert ${{ secrets.VPN_CERT }}
+        env:
+          VPN_USER: dev.idea
+          VPN_CERT: 8c69288173ff40ba557a0bdef3c3552984d47a00ca3beaef66b987d544f2425d
+
+      - name: Verify VPN Connection
+        run: ifconfig | grep ppp || { echo "VPN failed to connect"; exit 1; }
+
+      - name: Setup SSH Key
+        run: |
+          mkdir -p ~/.ssh
+          echo "${{ secrets.SSH_PRIVATE_KEY }}" > ~/.ssh/id_rsa
+          chmod 600 ~/.ssh/id_rsa
+          ssh-keyscan -H ${{ secrets.SERVER_IP }} >> ~/.ssh/known_hosts
+        env:
+          SERVER_IP: 10.10.10.84
+
+      - name: Deploy to Internal Server via SCP
+        run: |
+          scp -r ./site ${{ secrets.SERVER_USER }}@${{ secrets.SERVER_IP }}:/var/www/mkdocs-site
+
+      - name: Disconnect VPN
+        run: |
+          sudo pkill openfortivpn

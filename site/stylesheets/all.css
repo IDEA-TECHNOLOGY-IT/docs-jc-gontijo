@@ -1,0 +1,54 @@
+.md-sidebar {
+    color: #000;
+}
+
+.md-sidebar a {
+    color: #000;
+    text-decoration: none;
+}
+
+.md-sidebar a:hover {
+    color: #ff9900;
+}
+
+.md-nav__item--active > a {
+    color: #ff9900;
+    font-weight: bold;
+}
+
+.md-sidebar ul ul a {
+    color: #2c2c2c;
+}
+
+.md-sidebar ul ul a:hover {
+    color: #ff9900;
+}
+
+.md-sidebar .md-nav__item--active > a {
+    color: #ff9900;
+    font-weight: bold;
+}
+
+h1, h2, h3 {
+    font-weight: bold;
+    color: #000;
+}
+
+li, p {
+    color: #000;
+
+}
+
+code {
+    color: #ff9900;
+}
+
+.md-tabs__item--active {
+    color: #ff9900;
+    font-weight: bold;
+}
+
+.md-tabs__item  {
+    color: white;
+}
+

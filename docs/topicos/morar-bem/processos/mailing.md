@@ -44,5 +44,6 @@ O processo de Mailing consiste em captar novos clientes a partir de uma planilha
 
      FROM COM_MB_INTERESSADO I
          WHERE I.MBCL_NR_LOTE = LOTE
+         ORDER BY I.MBCL_TX_NOME ASC
 
 ---
